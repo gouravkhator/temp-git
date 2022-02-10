@@ -9,11 +9,11 @@ on:
   issues:
     types: [opened, reopened]
 jobs:
-  triage:
+  needs-triage:
     runs-on: ubuntu-latest
     steps:
     - uses: github/issue-labeler@v2.0
       with:
-        add-labels: "needs-triage"
+        enable-versioned-regex: 0
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         configuration-path: .github/workflows/label_bugs.yml
