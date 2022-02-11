@@ -1,13 +1,13 @@
 # This workflow labels issues with proper bugs
 
-name: Label issues
+name: Issues Labeler
 on:
   issues:
     types:
       - reopened
       - opened
 jobs:
-  label_issues:
+  triage_labeler:
     runs-on: ubuntu-latest
     permissions:
       issues: write
