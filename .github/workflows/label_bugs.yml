@@ -17,5 +17,5 @@ jobs:
         with:
           add-labels: "needs-triage"
           ignore-if-labeled: true
-          ignore-if-assigned: false
+          ignore-if-assigned: true
           repo-token: ${{ secrets.GITHUB_TOKEN }}
