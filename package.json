@@ -1,0 +1,20 @@
+{
+  "name": "temp-git",
+  "version": "0.0.1",
+  "description": "Temporary repo for npm and git automated releases demo",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouravkhator/temp-git.git"
+  },
+  "keywords": [],
+  "author": "Gourav Khator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gouravkhator/temp-git/issues"
+  },
+  "homepage": "https://github.com/gouravkhator/temp-git#readme"
+}
