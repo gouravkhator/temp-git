@@ -3,3 +3,4 @@
 ## Other Workflows
 
 - [ ] Automated Issue labeler
+- [ ] Automated GitHub and NPM releases
