@@ -20,11 +20,12 @@
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/exec": "^6.0.3",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "pkg": "^5.8.0",
-    "semantic-release": "^19.0.5",
-    "@semantic-release/exec": "^6.0.3"
+    "semantic-release": "^19.0.5"
   },
   "pkg": {
     "targets": [
