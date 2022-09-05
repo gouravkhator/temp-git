@@ -21,7 +21,12 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.6",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "pkg": "^5.8.0",
@@ -38,27 +43,28 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "docs/CHANGELOG.md"
-      }
-    ],
-    [
       "@semantic-release/exec",
       {
         "prepareCmd": "npm run build"
       }
     ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "docs/CHANGELOG.md"
+      }
+    ],
     "@semantic-release/npm",
     [
-      "@semantic-release/git",
+      "@semantic-release/github",
       {
         "assets": [
+          "dist/**",
           "docs/CHANGELOG.md"
         ]
       }
     ],
-    "@semantic-release/github"
+    "@semantic-release/git"
   ],
   "config": {
     "commitizen": {

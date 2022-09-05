@@ -33,8 +33,20 @@ We use `commitizen` for better standardized commit messages. We use `semantic-re
         "prepareCmd": "npm run build"
       }
     ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "docs/CHANGELOG.md"
+      }
+    ],
     "@semantic-release/npm",
-    "@semantic-release/github"
+    [
+      "@semantic-release/github",
+      {
+        "assets": ["dist/**", "docs/CHANGELOG.md"]
+      }
+    ],
+    "@semantic-release/git"
   ],
   "config": {
     "commitizen": {
